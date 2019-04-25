@@ -79,17 +79,19 @@
 /*
   Блок текста (пожелания)
 */
-.quest_finish .text {}
+#main .quest_finish .text {}
 
 /*
   Блок кнопок
 */
-.quest_finish .button_field {}
+#main .quest_finish .button_field {}
 
 /*
   Кнопка "вернутся"
 */
-.quest_finish .agree {}
+#main .quest_finish .agree {
+    background-color: #731982;
+}
 
 
 
@@ -265,18 +267,25 @@
 /*
   Компонент визуализации прогресса заполнения анкеты.
 */
-#main .progress {}
+#main .progress {
+    background-color: #731982;
+}
 
 /*
   Процент отвеченных вопросов.
 */
-#main .progress .line {}
+#main .progress .line {
+    background-color: #00b956;
+}
 
 /*
   Иконка (флаг).
   Цвет можно изменить задав значения свойствам "fill" и "stroke"
 */
-#main .progress i {}
+#main .progress i {
+  stroke: #00b956;
+  fill: #00b956;
+}
 
 /*
   Номера текущего вопроса.

@@ -254,12 +254,22 @@
 /*
   Стили кнопки "назат" и "не могу оценить"
 */
-#main .actions .cancel:not([disabled]) {}
+#main .actions .cancel:not([disabled]) {
+    background-color: #731982;
+}
+#main .actions .cancel:not([disabled]):hover {
+    background-color: #9f1eb1;
+}
 
 /*
   Стили кнопки "вперед"
 */
-#main .actions .agree:not([disabled]) {}
+#main .actions .agree:not([disabled]) {
+    background-color: #00b956;
+}
+#main .actions .agree:not([disabled]):hover {
+    background-color: #00eb6d;
+}
 
 
 

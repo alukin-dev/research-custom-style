@@ -168,7 +168,10 @@
 /*
   Блок варианта ответа.
 */
-#main .scale_list label span {}
+#main .scale_list label span {
+    background-color: #00b956;
+    color: #731982;
+}
 
 /*
   Блок варианта ответа при наведении курсора.
@@ -201,7 +204,10 @@
 /*
   Квадратная рамка отмеченного "checkbox".
 */
-#main .question input[type=checkbox]:checked ~ span::before {}
+#main .question input[type=checkbox]:checked ~ span::before {
+    border-color: #731982;
+    background-color: #731982;
+}
 
 /*
   Галочка отмеченного "checkbox".
@@ -226,12 +232,16 @@
 /*
   Круглая рамка отмеченного "radio".
 */
-#main input[type=radio]:checked ~ span::before {}
+#main input[type=radio]:checked ~ span::before {
+    border-color: #731982;
+}
 
 /*
   Точка отмеченного "radio".
 */
-#main input[type=radio]:checked ~ span::after {}
+#main input[type=radio]:checked ~ span::after {
+    background-color: #731982;
+}
 
 
 

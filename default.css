@@ -12,10 +12,7 @@
   Логотип в шапке страницы.
 */
 #header .logo {
-  /*
-    Укажите путь к изображению логотипа
-    background-image: url(/media/images/svg/logo_long.svg);
-  */
+    background-image: url(megafon-logo-green.svg);
 }
 
 /*

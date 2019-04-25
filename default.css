@@ -127,7 +127,10 @@
 /*
   Блок варианта ответа.
 */
-#main .radio_list label {}
+#main .radio_list label {
+    background-color: #00b956;
+    color: #731982;
+}
 
 /*
   Блок варианта ответа при наведении курсора.

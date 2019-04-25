@@ -1,3 +1,287 @@
-#header.transparent {
-  background-color: green;
+/*
+  Блок обрамляющий контент страницы.
+*/
+#wrapper {}
+
+/*
+  Блок для контента в шапке страницы.
+*/
+#header .container {}
+
+/*
+  Логотип в шапке страницы.
+*/
+#header .logo {
+  /*
+    Укажите путь к изображению логотипа
+    background-image: url(/media/images/svg/logo_long.svg);
+  */
 }
+
+/*
+  Блок основного контента страницы.
+*/
+#main {}
+
+
+
+
+/*
+  Блок описания анкеты (может отсутствовать).
+*/
+#main .prologue {}
+
+/*
+  Изображение перед текстом описания анкеты.
+*/
+#main .prologue .img {
+  /*
+    Указывать изображение так:
+    background-image: url(/media/images/svg/logo_long.svg)!important;
+    Обратите внимание на директиву !important;
+  */
+}
+
+/*
+  Текст описания (введение) анкеты.
+*/
+#main .prologue .text {}
+
+/*
+  Кнопка "Начать"
+*/
+#main .prologue .agree:not([disabled]) {}
+
+
+
+
+/*
+  Блок окончания анкеты.
+*/
+
+/*
+  Изображение перед текстом.
+*/
+#main .quest_finish .img {
+  /*
+    Указывать изображение так:
+    background-image: url(/media/images/svg/logo_long.svg)!important;
+    Обратите внимание на директиву important.
+  */
+}
+
+/*
+  Блок заголовка (финиш).
+*/
+#main .quest_finish h2 {}
+
+/*
+  Блок текста (пожелания)
+*/
+.quest_finish .text {}
+
+/*
+  Блок кнопок
+*/
+.quest_finish .button_field {}
+
+/*
+  Кнопка "вернутся"
+*/
+.quest_finish .agree {}
+
+
+
+
+/*
+  Блок анкеты.
+*/
+#main .question {}
+
+/*
+  Блок с текстом вопроса.
+*/
+#main .question header h3 {}
+
+/*
+  Блок с текстом пояснения к вопросу.
+*/
+#main .question header p {}
+
+
+
+
+/*
+  Блок вертикального списка ответов с одиночным выбором
+*/
+#main .radio_list {}
+
+/*
+  Блок обрамляюший вертикальный список ответов и ограничивающий максимальную ширину.
+*/
+#main .radio_list .input_field {}
+
+/*
+  Блок варианта ответа.
+*/
+#main .radio_list label {}
+
+/*
+  Блок варианта ответа при наведении курсора.
+*/
+#main .radio_list label:hover {}
+
+
+
+
+/*
+  Блок горизонтального списка (шкалы) ответов.
+*/
+#main .scale_list {}
+
+/*
+  Блока со смайликами над списком ответов.
+*/
+#main .scale_list .smiles {
+  /*
+    Для изменения цвета смайлов нужно задать свойства "fill" и "stroke" с желаемым значением.
+    Например так, смайлы станут красными.
+    fill: red;
+    stroke: red;
+  */
+}
+
+/*
+  Блок левого смайла.
+*/
+#main .scale_list .bad {}
+
+/*
+  Блок правого смайла.
+*/
+#main .scale_list .good {}
+
+/*
+  Блок обрамляющий горизонтальный список вариантов ответов.
+*/
+#main .scale_list .scale_list_field {}
+
+/*
+  Блок варианта ответа.
+*/
+#main .scale_list label span {}
+
+/*
+  Блок варианта ответа при наведении курсора.
+*/
+#main .scale_list label span:hover {}
+
+
+
+
+/*
+  Текстовое поле для ответа на "открытый вопрос"
+*/
+#main .question textarea {}
+
+
+
+
+/*
+  Компонент типа "checkbox" для множественного выбора (квадратный с галкой).
+  Состоит из 2-х частей, квадратной рамки и галочки.
+*/
+
+/*
+  Квадратная рамка не отмеченного "checkbox".
+  Цвет рамки задается свойством "border-color".
+  Цвет фона свойством "background-color".
+*/
+#main .question input[type=checkbox] ~ span::before {}
+
+/*
+  Квадратная рамка отмеченного "checkbox".
+*/
+#main .question input[type=checkbox]:checked ~ span::before {}
+
+/*
+  Галочка отмеченного "checkbox".
+*/
+#main .question input[type=checkbox]:checked ~ span::after {}
+
+
+
+
+/*
+  Компонент типа "radio" для одиночного выбора (круглый с точкой).
+  Состоит из 2-х частей, круглой рамки и точки.
+*/
+
+/*
+  Круглая рамка не отмеченного "radio".
+  Цвет рамки задается свойством "border-color".
+  Цвет фона свойством "background-color".
+*/
+#main input[type=radio] ~ span::before {}
+
+/*
+  Круглая рамка отмеченного "radio".
+*/
+#main input[type=radio]:checked ~ span::before {}
+
+/*
+  Точка отмеченного "radio".
+*/
+#main input[type=radio]:checked ~ span::after {}
+
+
+
+
+/*
+  Блок кнопок переключения между вопросами
+*/
+#main .actions {}
+
+/*
+  Общие стили для активной кнопки.
+*/
+#main .actions .button {}
+
+/*
+  Общие стили для заблокированной кнопки.
+*/
+#main .actions .button[disabled] {}
+
+/*
+  Стили кнопки "назат" и "не могу оценить"
+*/
+#main .actions .cancel:not([disabled]) {}
+
+/*
+  Стили кнопки "вперед"
+*/
+#main .actions .agree:not([disabled]) {}
+
+
+
+
+/*
+  Компонент визуализации прогресса заполнения анкеты.
+*/
+#main .progress {}
+
+/*
+  Процент отвеченных вопросов.
+*/
+#main .progress .line {}
+
+/*
+  Иконка (флаг).
+  Цвет можно изменить задав значения свойствам "fill" и "stroke"
+*/
+#main .progress i {}
+
+/*
+  Номера текущего вопроса.
+*/
+#main .progress .current {}

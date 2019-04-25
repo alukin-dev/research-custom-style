@@ -6,7 +6,9 @@
 /*
   Блок для контента в шапке страницы.
 */
-#header .container {}
+#header .container {
+  border-bottom: 1px solid #acacac;
+}
 
 /*
   Логотип в шапке страницы.
@@ -47,7 +49,9 @@
 /*
   Кнопка "Начать"
 */
-#main .prologue .agree:not([disabled]) {}
+#main .prologue .agree:not([disabled]) {
+  background-color: #731982;
+}
 
 
 
@@ -140,12 +144,8 @@
   Блока со смайликами над списком ответов.
 */
 #main .scale_list .smiles {
-  /*
-    Для изменения цвета смайлов нужно задать свойства "fill" и "stroke" с желаемым значением.
-    Например так, смайлы станут красными.
-    fill: red;
-    stroke: red;
-  */
+  stroke: #731982;
+  fill: #731982;
 }
 
 /*
